@@ -40,3 +40,21 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+### Summary of Files
+* app.py - Python file where the application code resides
+* Dockerfile - Contains a set of commands used to build an image
+* README.md - Contains extensive description about the project
+* Makefile - Contains the set of directives used by build automation tools. It has 4 commands
+    * setup - Creates and sources the virtual environment
+    * install - I0nstalls the required libraries
+    * lint - Lints the docker and pytyhon code
+    * all - Runs all the above tasks
+* requirement.txt - Prodvides the list of libraries required by the application
+* run_docker.sh - This script will build, tag and run a docker image
+* run_kubernetes.sh - Runs the docker image with kubernetes, also does port forwarding
+* upload_docker.sh - Tags and uploads the docker image to the docker repository
+* make_predictions.sh - Sends a request to the prediction app to provide a prediction 
+* config.yml - CircleCI config file which builds , test the project automatically when changes are pushed
+* docker_out.txt - Output of the prediction after executing run_docker.sh
+* kubernetes_out.txt - Output of the prediction after executing run_kubernetes.sh 
