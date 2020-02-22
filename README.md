@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![CircleCI](https://circleci.com/gh/deepakmadisetty/microservices.svg?style=svg)](https://circleci.com/gh/noahgift/container-revolution-devops-microservices)
 
 ## Project Overview
 
